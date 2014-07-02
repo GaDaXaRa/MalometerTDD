@@ -21,7 +21,11 @@
 		3FC4C1E51963188200A57F54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC4C1C81963188200A57F54 /* UIKit.framework */; };
 		3FC4C1E61963188200A57F54 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC4C1CA1963188200A57F54 /* CoreData.framework */; };
 		3FC4C1EE1963188200A57F54 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4C1EC1963188200A57F54 /* InfoPlist.strings */; };
-		3FC4C1F01963188200A57F54 /* MalometerTDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4C1EF1963188200A57F54 /* MalometerTDDTests.m */; };
+		3FC4C2021963EFCD00A57F54 /* AgentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4C2011963EFCD00A57F54 /* AgentTests.m */; };
+		3FC4C2031963F08600A57F54 /* MalometerTDD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4C1D81963188200A57F54 /* MalometerTDD.xcdatamodeld */; };
+		3FC4C20C1963F91800A57F54 /* Agent+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4C20B1963F91800A57F54 /* Agent+Model.m */; };
+		3FC4C20F19641A4E00A57F54 /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4C20E19641A4E00A57F54 /* Agent.m */; };
+		9F26B6FEB2E74410A6C1D6FB /* libPods-MalometerTDDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C907592B3B467A832DC97B /* libPods-MalometerTDDTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +56,13 @@
 		3FC4C1E21963188200A57F54 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3FC4C1EB1963188200A57F54 /* MalometerTDDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MalometerTDDTests-Info.plist"; sourceTree = "<group>"; };
 		3FC4C1ED1963188200A57F54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3FC4C1EF1963188200A57F54 /* MalometerTDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MalometerTDDTests.m; sourceTree = "<group>"; };
+		3FC4C2011963EFCD00A57F54 /* AgentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgentTests.m; sourceTree = "<group>"; };
+		3FC4C20A1963F91800A57F54 /* Agent+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Agent+Model.h"; sourceTree = "<group>"; };
+		3FC4C20B1963F91800A57F54 /* Agent+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Agent+Model.m"; sourceTree = "<group>"; };
+		3FC4C20D19641A4E00A57F54 /* Agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
+		3FC4C20E19641A4E00A57F54 /* Agent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Agent.m; sourceTree = "<group>"; };
+		76C907592B3B467A832DC97B /* libPods-MalometerTDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MalometerTDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63190CBD5ED4AB193A71E64 /* Pods-MalometerTDDTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MalometerTDDTests.xcconfig"; path = "Pods/Pods-MalometerTDDTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,7 @@
 				3FC4C1E61963188200A57F54 /* CoreData.framework in Frameworks */,
 				3FC4C1E51963188200A57F54 /* UIKit.framework in Frameworks */,
 				3FC4C1E41963188200A57F54 /* Foundation.framework in Frameworks */,
+				9F26B6FEB2E74410A6C1D6FB /* libPods-MalometerTDDTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +99,7 @@
 				3FC4C1E91963188200A57F54 /* MalometerTDDTests */,
 				3FC4C1C31963188200A57F54 /* Frameworks */,
 				3FC4C1C21963188200A57F54 /* Products */,
+				F63190CBD5ED4AB193A71E64 /* Pods-MalometerTDDTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +120,7 @@
 				3FC4C1C81963188200A57F54 /* UIKit.framework */,
 				3FC4C1CA1963188200A57F54 /* CoreData.framework */,
 				3FC4C1E21963188200A57F54 /* XCTest.framework */,
+				76C907592B3B467A832DC97B /* libPods-MalometerTDDTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,6 +128,7 @@
 		3FC4C1CC1963188200A57F54 /* MalometerTDD */ = {
 			isa = PBXGroup;
 			children = (
+				3FC4C1FC1963EF9200A57F54 /* Entities */,
 				3FC4C1D51963188200A57F54 /* AppDelegate.h */,
 				3FC4C1D61963188200A57F54 /* AppDelegate.m */,
 				3FC4C1DB1963188200A57F54 /* Images.xcassets */,
@@ -138,7 +152,7 @@
 		3FC4C1E91963188200A57F54 /* MalometerTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				3FC4C1EF1963188200A57F54 /* MalometerTDDTests.m */,
+				3FC4C2001963EFAE00A57F54 /* Entities */,
 				3FC4C1EA1963188200A57F54 /* Supporting Files */,
 			);
 			path = MalometerTDDTests;
@@ -151,6 +165,25 @@
 				3FC4C1EC1963188200A57F54 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FC4C1FC1963EF9200A57F54 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3FC4C20D19641A4E00A57F54 /* Agent.h */,
+				3FC4C20E19641A4E00A57F54 /* Agent.m */,
+				3FC4C20A1963F91800A57F54 /* Agent+Model.h */,
+				3FC4C20B1963F91800A57F54 /* Agent+Model.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		3FC4C2001963EFAE00A57F54 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3FC4C2011963EFCD00A57F54 /* AgentTests.m */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FC4C1F61963188200A57F54 /* Build configuration list for PBXNativeTarget "MalometerTDDTests" */;
 			buildPhases = (
+				93C0F1F8E0384F29A5AB4CE6 /* Check Pods Manifest.lock */,
 				3FC4C1DD1963188200A57F54 /* Sources */,
 				3FC4C1DE1963188200A57F54 /* Frameworks */,
 				3FC4C1DF1963188200A57F54 /* Resources */,
+				73BDDF0F636F4737A84F5827 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,13 +278,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		73BDDF0F636F4737A84F5827 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-MalometerTDDTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93C0F1F8E0384F29A5AB4CE6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FC4C1BD1963188200A57F54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3FC4C1DA1963188200A57F54 /* MalometerTDD.xcdatamodeld in Sources */,
+				3FC4C20C1963F91800A57F54 /* Agent+Model.m in Sources */,
 				3FC4C1D71963188200A57F54 /* AppDelegate.m in Sources */,
+				3FC4C20F19641A4E00A57F54 /* Agent.m in Sources */,
 				3FC4C1D31963188200A57F54 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +328,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FC4C1F01963188200A57F54 /* MalometerTDDTests.m in Sources */,
+				3FC4C2021963EFCD00A57F54 /* AgentTests.m in Sources */,
+				3FC4C2031963F08600A57F54 /* MalometerTDD.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +461,7 @@
 		};
 		3FC4C1F71963188200A57F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63190CBD5ED4AB193A71E64 /* Pods-MalometerTDDTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MalometerTDD.app/MalometerTDD";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -412,6 +484,7 @@
 		};
 		3FC4C1F81963188200A57F54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63190CBD5ED4AB193A71E64 /* Pods-MalometerTDDTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MalometerTDD.app/MalometerTDD";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -447,6 +520,7 @@
 				3FC4C1F51963188200A57F54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FC4C1F61963188200A57F54 /* Build configuration list for PBXNativeTarget "MalometerTDDTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +529,7 @@
 				3FC4C1F81963188200A57F54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
