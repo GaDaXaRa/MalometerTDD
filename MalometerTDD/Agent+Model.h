@@ -13,5 +13,6 @@
 + (NSFetchRequest *)shortedRequest;
 + (NSFetchRequest *)shortedRequestWithPredicate:(NSPredicate *)predicate;
 + (NSFetchRequest *)requestWithSortDescriptors:(NSArray *)sortDescriptors;
+- (BOOL)validateName:(id __autoreleasing *)name error:(NSError * __autoreleasing *)error;
 
 @end

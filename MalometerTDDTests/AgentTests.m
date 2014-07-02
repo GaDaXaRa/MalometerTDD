@@ -198,8 +198,32 @@
     NSFetchRequest *request = [Agent requestWithSortDescriptors:sortDescriptors];
     
     XCTAssertEqualObjects(sortDescriptors, request.sortDescriptors, @"Sort descriptors must match");
+}
+
+- (void)testAgentNameShouldNotBeEmpty {
+    NSString *invalidName = @"";
     
+    XCTAssertFalse([sut validateName:&invalidName error:NULL], @"It must not be validate");
+}
+
+- (void)testAgentNameShouldHaveAlphanumericCharacters {
+    NSString *invalidName = @" ";
     
+    XCTAssertFalse([sut validateName:&invalidName error:NULL], @"It must not be validate");
+}
+
+- (void)testAgentMotivationShouldNotBeMoreThanFive {
+    sut.motivation = @6;
+    sut.name = @"agent";
+    
+    XCTAssertFalse([sut validateForInsert:NULL], @"It must not be validate");
+}
+
+- (void)testAgentDestructionPowerShouldNotBeMoreThanFive {
+    sut.destructionPower = @6;
+    sut.name = @"agent";
+    
+    XCTAssertFalse([sut validateForInsert:NULL], @"It must not be validate");
 }
 
 @end

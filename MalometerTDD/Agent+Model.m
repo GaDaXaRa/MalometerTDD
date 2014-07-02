@@ -39,6 +39,13 @@
     return fetchRequest;
 }
 
+- (BOOL)validateName:(id __autoreleasing *)name error:(NSError * __autoreleasing *)error {
+    NSString *stringName = *name;
+    stringName = [stringName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    
+    return [stringName length] != 0;
+}
+
 - (NSNumber *)assessment {
     return [self assesmentFormula];
 }

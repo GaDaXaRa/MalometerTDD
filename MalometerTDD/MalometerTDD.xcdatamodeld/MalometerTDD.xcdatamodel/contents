@@ -2,9 +2,9 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Agent" representedClassName="Agent" syncable="YES">
         <attribute name="assessment" transient="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="destructionPower" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="motivation" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="destructionPower" attributeType="Integer 16" maxValueString="5" defaultValueString="0" syncable="YES"/>
+        <attribute name="motivation" attributeType="Integer 16" maxValueString="5" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" minValueString="1" syncable="YES"/>
     </entity>
     <elements>
         <element name="Agent" positionX="-36" positionY="9" width="128" height="105"/>
